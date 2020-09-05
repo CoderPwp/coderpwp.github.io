@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pwp.ink/"/>
-  <updated>2020-08-26T16:25:41.701Z</updated>
+  <updated>2020-09-05T07:25:30.913Z</updated>
   <id>http://pwp.ink/</id>
   
   <author>
@@ -15,6 +15,85 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关闭 macOS(适用黑苹果) 开机跑代码、啰嗦模式</title>
+    <link href="http://pwp.ink/2020/09/05/%E5%85%B3%E9%97%AD-macOS-%E9%80%82%E7%94%A8%E9%BB%91%E8%8B%B9%E6%9E%9C-%E5%BC%80%E6%9C%BA%E8%B7%91%E4%BB%A3%E7%A0%81%E3%80%81%E5%95%B0%E5%97%A6%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://pwp.ink/2020/09/05/%E5%85%B3%E9%97%AD-macOS-%E9%80%82%E7%94%A8%E9%BB%91%E8%8B%B9%E6%9E%9C-%E5%BC%80%E6%9C%BA%E8%B7%91%E4%BB%A3%E7%A0%81%E3%80%81%E5%95%B0%E5%97%A6%E6%A8%A1%E5%BC%8F/</id>
+    <published>2020-09-05T15:24:36.000Z</published>
+    <updated>2020-09-05T07:25:30.913Z</updated>
+    
+    <content type="html"><![CDATA[<p>黑苹果开机时 logo 突然变大，在``Clover Configurator` 下设置一下就好了<a id="more"></a>，不过也只能让开机第一段 logo 变得和第二段一样大。</p><h1 id="解决-1"><a href="#解决-1" class="headerlink" title="解决 1"></a>解决 1</h1><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905151225345.png" alt="1" title="">                </div>                <div class="image-caption">1</div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905151409813.png" alt="2" title="">                </div>                <div class="image-caption">2</div>            </figure><h1 id="解决-2"><a href="#解决-2" class="headerlink" title="解决 2"></a>解决 2</h1><p><strong>如果你明明已经在<code>config.plist</code>里已经关闭了<code>-v</code>参数，开机还是出现跑代码，就请尝试打开终端输入下面的代码尝试。</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nvram boot-args&#x3D;&quot;&quot;</span><br></pre></td></tr></table></figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905151817390.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><strong>[1] <a href="https://www.bilibili.com/read/cv7392829" target="_blank" rel="noopener">黑苹果开机如何去掉跑码模式–终极解决方案, 小明和他的女朋友</a></strong></p><p><strong>[2] <a href="https://zhidao.baidu.com/question/1708607034348841300.html" target="_blank" rel="noopener">请教Mac Mini怎么开启和关闭啰嗦模式, 约定20125</a></strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;黑苹果开机时 logo 突然变大，在``Clover Configurator` 下设置一下就好了
+    
+    </summary>
+    
+    
+      <category term="转载" scheme="http://pwp.ink/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="黑苹果" scheme="http://pwp.ink/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="logo 突然变大" scheme="http://pwp.ink/tags/logo-%E7%AA%81%E7%84%B6%E5%8F%98%E5%A4%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决：无法删除Karabiner-Elements.app和Karabiner-EventViewer.app应用</title>
+    <link href="http://pwp.ink/2020/09/05/%E8%A7%A3%E5%86%B3%EF%BC%9A%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4Karabiner-Elements-app%E5%92%8CKarabiner-EventViewer-app%E5%BA%94%E7%94%A8/"/>
+    <id>http://pwp.ink/2020/09/05/%E8%A7%A3%E5%86%B3%EF%BC%9A%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4Karabiner-Elements-app%E5%92%8CKarabiner-EventViewer-app%E5%BA%94%E7%94%A8/</id>
+    <published>2020-09-05T06:51:08.977Z</published>
+    <updated>2020-09-05T06:59:39.348Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://github.com/wwwjfy/Karabiner-Elements" target="_blank" rel="noopener">Karabiner-Elements</a></strong> 是一款 macOS 平台修改键位映射的开源程序，却发现无法卸载干净。<a id="more"></a></p><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905144258485.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905143929666.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo &#39;&#x2F;Library&#x2F;Application Support&#x2F;org.pqrs&#x2F;Karabiner-Elements&#x2F;uninstall.sh&#39;</span><br></pre></td></tr></table></figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905144706766.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p>你也可以手动进入下面这个目录，看到<code>uninstall.sh</code>卸载脚本，记得用 root 权限</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;Library&#x2F;Application Support&#x2F;org.pqrs</span><br></pre></td></tr></table></figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200905144848333.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p>到这里，我就已经彻底卸载干净了。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><strong>[1] <a href="https://blog.csdn.net/weixin_44600422/article/details/103719686" target="_blank" rel="noopener">删除Karabiner-Elements 和 Karabiner-EventViewer提示项目被锁定, the ache</a></strong></p><p><strong>[2] <a href="https://blog.csdn.net/weixin_44600422/article/details/103719686" target="_blank" rel="noopener">Mac彻底删除Paragon NTFS for Mac和karabiner-Elements, BlueBlueSkyZ</a></strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/wwwjfy/Karabiner-Elements&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Karabiner-Elements&lt;/a&gt;&lt;/strong&gt; 是一款 macOS 平台修改键位映射的开源程序，却发现无法卸载干净。
+    
+    </summary>
+    
+    
+      <category term="转载学习" scheme="http://pwp.ink/categories/%E8%BD%AC%E8%BD%BD%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="macOS" scheme="http://pwp.ink/tags/macOS/"/>
+    
+      <category term="Karabiner-Elements.app" scheme="http://pwp.ink/tags/Karabiner-Elements-app/"/>
+    
+      <category term="Karabiner-EventViewer.app" scheme="http://pwp.ink/tags/Karabiner-EventViewer-app/"/>
+    
+      <category term="已锁定" scheme="http://pwp.ink/tags/%E5%B7%B2%E9%94%81%E5%AE%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bash_arpspoof_未找到命令</title>
+    <link href="http://pwp.ink/2020/09/05/bash_arpspoof_%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/"/>
+    <id>http://pwp.ink/2020/09/05/bash_arpspoof_%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-09-04T19:03:03.000Z</published>
+    <updated>2020-09-05T07:06:24.252Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Kali Linux 系统下玩 ARP 欺骗的时候，遇到这个问题，bash: arpspoof：未找到命令<a id="more"></a></p><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><blockquote><p>arpspoof 是一款进行arp欺骗的工具，攻击者通过毒化受害者arp缓存，将网关mac替换为攻击者mac，然后攻击者可截获受害者发送和收到的数据包，可获取受害者账户、密码等相关敏感信息。</p></blockquote><p>运行 arpspoof 命令时提示：arpspoof未找到命令</p><p>其原因是你还未安装 arpspoof 工具；</p><p>arpspoof 是 dsniff 的一个附属工具，所以我们需要安装的是 dsniff ：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install dsniff</span><br></pre></td></tr></table></figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="image-20200904190234447.png" alt="arpspoof安装成功" title="">                </div>                <div class="image-caption">arpspoof安装成功</div>            </figure><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><strong>[1] <a href="https://www.perfcode.com/p/arpspoof-not-found.html" target="_blank" rel="noopener">arpspoof未找到命令解决方法, 完美代码</a></strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在Kali Linux 系统下玩 ARP 欺骗的时候，遇到这个问题，bash: arpspoof：未找到命令
+    
+    </summary>
+    
+    
+      <category term="转载" scheme="http://pwp.ink/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="arpspoof" scheme="http://pwp.ink/tags/arpspoof/"/>
+    
+      <category term="未找到命令" scheme="http://pwp.ink/tags/%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>解决macOS上Microsoft AutoUpdate更新太慢的问题</title>
