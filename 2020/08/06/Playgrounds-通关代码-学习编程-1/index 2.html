@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>「Playgrounds - 通关代码」学习编程 1 | CoderPwp | (*´▽｀)ノノ泥嚎，我是一只喷雾瓶！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="全章节答案,macOS,Swift编程,Playgrounds,通关代码">
+    <meta name="description" content="macOS 上的 Playgrounds 的小游戏蛮好玩的，据说是拿来学习 苹果的编程语言 Swift 的，但说实话玩通这章没觉得学到啥，不过好玩就行了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「Playgrounds - 通关代码」学习编程 1">
+<meta property="og:url" content="http://pwp.ink/2020/08/06/Playgrounds-%E9%80%9A%E5%85%B3%E4%BB%A3%E7%A0%81-%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B-1/index.html">
+<meta property="og:site_name" content="CoderPwp">
+<meta property="og:description" content="macOS 上的 Playgrounds 的小游戏蛮好玩的，据说是拿来学习 苹果的编程语言 Swift 的，但说实话玩通这章没觉得学到啥，不过好玩就行了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://pwp.ink/2020/08/06/Playgrounds-%E9%80%9A%E5%85%B3%E4%BB%A3%E7%A0%81-%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B-1/1.png">
+<meta property="og:image" content="http://pwp.ink/2020/08/06/Playgrounds-%E9%80%9A%E5%85%B3%E4%BB%A3%E7%A0%81-%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B-1/2.png">
+<meta property="article:published_time" content="2020-08-06T09:43:53.000Z">
+<meta property="article:modified_time" content="2020-08-24T08:59:08.866Z">
+<meta property="article:author" content="CoderPwp">
+<meta property="article:tag" content="全章节答案">
+<meta property="article:tag" content="macOS">
+<meta property="article:tag" content="Swift编程">
+<meta property="article:tag" content="Playgrounds">
+<meta property="article:tag" content="通关代码">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://pwp.ink/2020/08/06/Playgrounds-%E9%80%9A%E5%85%B3%E4%BB%A3%E7%A0%81-%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B-1/1.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="CoderPwp" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">CoderPwp</h5>
+          <a href="mailto:coder.pwp@qq.com" title="coder.pwp@qq.com" class="mail">coder.pwp@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                目录
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://coderpwp.gitee.io" target="_blank" >
+                <i class="icon icon-lg icon-icon icon-clipboard"></i>
+                备站
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-info-circle"></i>
+                关于
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://pwp.leanapp.cn/" target="_blank" >
+                <i class="icon icon-lg icon-id-card"></i>
+                后台
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">「Playgrounds - 通关代码」学习编程 1</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">「Playgrounds - 通关代码」学习编程 1</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-08-06T09:43:53.000Z" itemprop="datePublished" class="page-time">
+  2020-08-06
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%8E%9F%E5%88%9B/">原创</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#命令"><span class="post-toc-number">1.</span> <span class="post-toc-text">命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发出命令"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">发出命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#添加新命令"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">添加新命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#切换开关"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">切换开关</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#传送门练习"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">传送门练习</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发现并修复程序错误"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">发现并修复程序错误</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#消灭程序错误练习"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">消灭程序错误练习</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最短路线"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">最短路线</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#函数"><span class="post-toc-number">2.</span> <span class="post-toc-text">函数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#组合新行为"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">组合新行为</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建新函数"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">创建新函数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#收集、切换、重复"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">收集、切换、重复</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#尽收囊中"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">尽收囊中</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#嵌套模式"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">嵌套模式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#嵌入式阶梯"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">嵌入式阶梯</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#寻宝"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">寻宝</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#For-循环"><span class="post-toc-number">3.</span> <span class="post-toc-text">For 循环</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用循环"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">使用循环</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#循环每一侧"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">循环每一侧</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#行至边缘再返回"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">行至边缘再返回</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#循环跳跃者"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">循环跳跃者</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拓展技能"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">拓展技能</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#宝石农场"><span class="post-toc-number">3.6.</span> <span class="post-toc-text">宝石农场</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#席卷四处"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">席卷四处</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#条件代码"><span class="post-toc-number">4.</span> <span class="post-toc-text">条件代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#检查开关"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">检查开关</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用-else-if"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">使用 else if</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#循环条件代码"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">循环条件代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#满足条件时向上爬"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">满足条件时向上爬</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#定义更巧妙的函数"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">定义更巧妙的函数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#围困其中"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">围困其中</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#决策树"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">决策树</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#逻辑运算符"><span class="post-toc-number">5.</span> <span class="post-toc-text">逻辑运算符</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用“非”运算符"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">使用“非”运算符</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#非之螺旋"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">非之螺旋</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#检查这个与那个"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">检查这个与那个</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#检查这个或那个"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">检查这个或那个</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#逻辑迷宫"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">逻辑迷宫</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#While-循环"><span class="post-toc-number">6.</span> <span class="post-toc-text">While 循环</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#当…时运行代码"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">当…时运行代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建更巧妙的-While-循环"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">创建更巧妙的 While 循环</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#正确选取工具"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">正确选取工具</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四乘以四"><span class="post-toc-number">6.4.</span> <span class="post-toc-text">四乘以四</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#转身"><span class="post-toc-number">6.5.</span> <span class="post-toc-text">转身</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#富饶之地"><span class="post-toc-number">6.6.</span> <span class="post-toc-text">富饶之地</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#嵌套循环"><span class="post-toc-number">6.7.</span> <span class="post-toc-text">嵌套循环</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#随机矩形"><span class="post-toc-number">6.8.</span> <span class="post-toc-text">随机矩形</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#始终右转"><span class="post-toc-number">6.9.</span> <span class="post-toc-text">始终右转</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#算法"><span class="post-toc-number">7.</span> <span class="post-toc-text">算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#右手定则"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">右手定则</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#调整算法"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">调整算法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#征服迷宫"><span class="post-toc-number">7.3.</span> <span class="post-toc-text">征服迷宫</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#左转还是右转？"><span class="post-toc-number">7.4.</span> <span class="post-toc-text">左转还是右转？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#向左走，向右走"><span class="post-toc-number">7.5.</span> <span class="post-toc-text">向左走，向右走</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Playgrounds-通关代码-学习编程-1"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">「Playgrounds - 通关代码」学习编程 1</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-08-06 09:43:53" datetime="2020-08-06T09:43:53.000Z"  itemprop="datePublished">2020-08-06</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%8E%9F%E5%88%9B/">原创</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>macOS 上的 Playgrounds 的小游戏蛮好玩的，据说是拿来学习 苹果的编程语言 Swift 的，但说实话玩通这章没觉得学到啥，不过好玩就行了。<a id="more"></a></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="1.png" alt="学习编程 1" title="">
+                </div>
+                <div class="image-caption">学习编程 1</div>
+            </figure>
+
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="2.png" alt="通关截图" title="">
+                </div>
+                <div class="image-caption">通关截图</div>
+            </figure>
+
+<h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><h2 id="发出命令"><a href="#发出命令" class="headerlink" title="发出命令"></a>发出命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="添加新命令"><a href="#添加新命令" class="headerlink" title="添加新命令"></a>添加新命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="切换开关"><a href="#切换开关" class="headerlink" title="切换开关"></a>切换开关</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="传送门练习"><a href="#传送门练习" class="headerlink" title="传送门练习"></a>传送门练习</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="发现并修复程序错误"><a href="#发现并修复程序错误" class="headerlink" title="发现并修复程序错误"></a>发现并修复程序错误</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="消灭程序错误练习"><a href="#消灭程序错误练习" class="headerlink" title="消灭程序错误练习"></a>消灭程序错误练习</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="最短路线"><a href="#最短路线" class="headerlink" title="最短路线"></a>最短路线</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="组合新行为"><a href="#组合新行为" class="headerlink" title="组合新行为"></a>组合新行为</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="创建新函数"><a href="#创建新函数" class="headerlink" title="创建新函数"></a>创建新函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">func turnRight() &#123;</span><br><span class="line">    turnLeft()</span><br><span class="line">    turnLeft()</span><br><span class="line">    turnLeft()</span><br><span class="line">&#125;</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="收集、切换、重复"><a href="#收集、切换、重复" class="headerlink" title="收集、切换、重复"></a>收集、切换、重复</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">func go_AHEAD() &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">    moveForward()</span><br><span class="line">    toggleSwitch()</span><br><span class="line">&#125;</span><br><span class="line">go_AHEAD()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">go_AHEAD()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">go_AHEAD()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">go_AHEAD()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="尽收囊中"><a href="#尽收囊中" class="headerlink" title="尽收囊中"></a>尽收囊中</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">func forward_and_collect() &#123;</span><br><span class="line">    collectGem()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">forward_and_collect()</span><br><span class="line">forward_and_collect()</span><br><span class="line">func turnRight()&#123;</span><br><span class="line">    turnLeft()</span><br><span class="line">    turnLeft()</span><br><span class="line">    turnLeft()</span><br><span class="line">&#125;</span><br><span class="line">turnRight()</span><br><span class="line">forward_and_collect()</span><br><span class="line">forward_and_collect()</span><br><span class="line">turnRight()</span><br><span class="line">forward_and_collect()</span><br><span class="line">forward_and_collect()</span><br><span class="line">turnRight()</span><br><span class="line">forward_and_collect()</span><br><span class="line">turnRight()</span><br><span class="line">forward_and_collect()</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="嵌套模式"><a href="#嵌套模式" class="headerlink" title="嵌套模式"></a>嵌套模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">func turnAround() &#123;</span><br><span class="line">		turnLeft()</span><br><span class="line">    turnLeft</span><br><span class="line">&#125;</span><br><span class="line">func solveStair() &#123;</span><br><span class="line">		moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">&#125;</span><br><span class="line">solveStair()</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">solveStair()</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">solveStair()</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">solveStair()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="嵌入式阶梯"><a href="#嵌入式阶梯" class="headerlink" title="嵌入式阶梯"></a>嵌入式阶梯</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">func collectGemTurnAround() &#123;</span><br><span class="line">		moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">    turnLeft()</span><br><span class="line">    turnLeft()</span><br><span class="line">    moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">func solveRow() &#123;</span><br><span class="line">		collectGemTurnAround()</span><br><span class="line">    collectGemTurnAround()</span><br><span class="line">&#125;</span><br><span class="line">solveRow()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">solveRow()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">solveRow()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="寻宝"><a href="#寻宝" class="headerlink" title="寻宝"></a>寻宝</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">func moveThenToggle()</span><br><span class="line">&#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">    toggleSwitch()</span><br><span class="line">&#125;</span><br><span class="line">func turnAround()</span><br><span class="line">&#123;</span><br><span class="line">    turnLeft()</span><br><span class="line">    turnLeft()</span><br><span class="line">&#125;</span><br><span class="line">func twoMoveForward()</span><br><span class="line">&#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">moveThenToggle()</span><br><span class="line">turnAround()</span><br><span class="line">twoMoveForward()</span><br><span class="line">moveThenToggle()</span><br><span class="line">turnAround()</span><br><span class="line">twoMoveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveThenToggle()</span><br><span class="line">moveThenToggle()</span><br><span class="line">turnAround()</span><br><span class="line">twoMoveForward()</span><br><span class="line">twoMoveForward()</span><br><span class="line">moveThenToggle()</span><br><span class="line">moveThenToggle()</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="For-循环"><a href="#For-循环" class="headerlink" title="For 循环"></a>For 循环</h1><h2 id="使用循环"><a href="#使用循环" class="headerlink" title="使用循环"></a>使用循环</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 5 &#123;</span><br><span class="line">		moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="循环每一侧"><a href="#循环每一侧" class="headerlink" title="循环每一侧"></a>循环每一侧</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 4 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">    moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">    moveForward()</span><br><span class="line">    turnRight()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="行至边缘再返回"><a href="#行至边缘再返回" class="headerlink" title="行至边缘再返回"></a>行至边缘再返回</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="循环跳跃者"><a href="#循环跳跃者" class="headerlink" title="循环跳跃者"></a>循环跳跃者</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnLeft()</span><br><span class="line">moveForward()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="拓展技能"><a href="#拓展技能" class="headerlink" title="拓展技能"></a>拓展技能</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">func turnDirection()&#123;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">    turnRight()</span><br><span class="line">&#125;</span><br><span class="line">func turnAround() &#123;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">func stepTask()&#123;</span><br><span class="line">    for i in 1 ... 7 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">    toggleSwitch()</span><br><span class="line">    turnAround()</span><br><span class="line">    for i in 1 ... 7 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for i in 1 ... 3 &#123;</span><br><span class="line">    turnDirection()</span><br><span class="line">    stepTask()</span><br><span class="line">    turnRight()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="宝石农场"><a href="#宝石农场" class="headerlink" title="宝石农场"></a>宝石农场</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">func taskProcess()</span><br><span class="line">&#123;</span><br><span class="line">    turnRight()</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">    func turnAround() &#123;</span><br><span class="line">        turnLeft()</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">    turnAround()</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">    turnAround()</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">    func turnDirection() &#123;</span><br><span class="line">        turnDirection()</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">    turnLeft()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">for i in 1 ... 3 &#123;</span><br><span class="line">    taskProcess()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="席卷四处"><a href="#席卷四处" class="headerlink" title="席卷四处"></a>席卷四处</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">&#125;</span><br><span class="line">func turnAround() &#123;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">turnAround()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">moveForward()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">&#125;</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">turnAround()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">moveForward()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">&#125;</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">turnAround()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">moveForward()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">&#125;</span><br><span class="line">turnAround()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">collectGem()</span><br><span class="line">turnAround()</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="条件代码"><a href="#条件代码" class="headerlink" title="条件代码"></a>条件代码</h1><h2 id="检查开关"><a href="#检查开关" class="headerlink" title="检查开关"></a>检查开关</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">for i in 1 ... 3 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnClosedSwitch &#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="使用-else-if"><a href="#使用-else-if" class="headerlink" title="使用 else if"></a>使用 else if</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnClosedSwitch</span><br><span class="line">    &#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">    else if isOnGem</span><br><span class="line">    &#123;</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="循环条件代码"><a href="#循环条件代码" class="headerlink" title="循环条件代码"></a>循环条件代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">	moveForward()</span><br><span class="line">    if isOnGem&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">    else if isOnClosedSwitch&#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="满足条件时向上爬"><a href="#满足条件时向上爬" class="headerlink" title="满足条件时向上爬"></a>满足条件时向上爬</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">func taskGem()&#123;</span><br><span class="line">    for i in 1 ... 4 &#123;</span><br><span class="line">        if isOnGem &#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    turnLeft()</span><br><span class="line">&#125;</span><br><span class="line">for i in 1 ... 4 &#123;</span><br><span class="line">    taskGem()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="定义更巧妙的函数"><a href="#定义更巧妙的函数" class="headerlink" title="定义更巧妙的函数"></a>定义更巧妙的函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">func collectOrToggle() &#123;</span><br><span class="line">if isOnClosedSwitch&#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">    else if isOnGem&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">func twoSteps() &#123;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    twoSteps()</span><br><span class="line">    collectOrToggle()</span><br><span class="line">&#125;</span><br><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    turnLeft()</span><br><span class="line">    twoSteps()</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br><span class="line">twoSteps()</span><br><span class="line">collectGem()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">turnRight()</span><br><span class="line">twoSteps()</span><br><span class="line">collectOrToggle()</span><br><span class="line">twoSteps()</span><br><span class="line">collectOrToggle()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="围困其中"><a href="#围困其中" class="headerlink" title="围困其中"></a>围困其中</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">func isOnClosedSwitchOrGem()&#123;</span><br><span class="line">    if isOnClosedSwitch&#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">    else if isOnGem&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">moveForward()</span><br><span class="line">isOnClosedSwitchOrGem()</span><br><span class="line">turnRight()</span><br><span class="line">moveForward()</span><br><span class="line">isOnClosedSwitchOrGem()</span><br><span class="line">turnRight()</span><br><span class="line">for i in 1 ... 3 &#123;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">        isOnClosedSwitchOrGem()</span><br><span class="line">    &#125;</span><br><span class="line">    turnRight()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 2 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">    func GemOrSwitch()</span><br><span class="line">    &#123;</span><br><span class="line">        if isOnGem&#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125;</span><br><span class="line">        else if isOnClosedSwitch&#123;</span><br><span class="line">            toggleSwitch()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    func turnAround()&#123;</span><br><span class="line">        for i in 1 ... 2 &#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    func longBridge() &#123;</span><br><span class="line">        turnRight()</span><br><span class="line">        for i in 1 ... 3 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        turnLeft()</span><br><span class="line">        moveForward()</span><br><span class="line">        GemOrSwitch()</span><br><span class="line">        turnAround()</span><br><span class="line">        moveForward()</span><br><span class="line">        turnRight()</span><br><span class="line">        for i in 1 ... 3 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">    longBridge()</span><br><span class="line">    moveForward()</span><br><span class="line">    GemOrSwitch()</span><br><span class="line">    turnLeft()</span><br><span class="line">    moveForward()</span><br><span class="line">    GemOrSwitch()</span><br><span class="line">    turnAround()</span><br><span class="line">    moveForward()</span><br><span class="line">    turnLeft()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h1><h2 id="使用“非”运算符"><a href="#使用“非”运算符" class="headerlink" title="使用“非”运算符"></a>使用“非”运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">func turnAround()</span><br><span class="line">&#123;</span><br><span class="line">    for i in 1 ... 2 &#123;</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">for i in 1 ... 4 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if !isOnGem&#123;</span><br><span class="line">        turnLeft()</span><br><span class="line">        for i in 1 ... 2 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        collectGem()</span><br><span class="line">        turnAround()</span><br><span class="line">        for i in 1 ... 2 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="非之螺旋"><a href="#非之螺旋" class="headerlink" title="非之螺旋"></a>非之螺旋</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 13 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isBlocked&#123;</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="检查这个与那个"><a href="#检查这个与那个" class="headerlink" title="检查这个与那个"></a>检查这个与那个</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 7 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnGem &amp;&amp; !isBlockedLeft&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">    &#125;</span><br><span class="line">    else if isOnGem &amp;&amp; isBlockedLeft&#123;</span><br><span class="line">        turnRight()</span><br><span class="line">        for i in 1 ... 2 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        func backLine()&#123;</span><br><span class="line">            func turnAround()&#123;</span><br><span class="line">                for i in 1 ... 2 &#123;</span><br><span class="line">                    turnLeft()</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            turnAround()</span><br><span class="line">            for i in 1 ... 2 &#123;</span><br><span class="line">                moveForward()</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if isOnClosedSwitch&#123;</span><br><span class="line">            toggleSwitch()</span><br><span class="line">        &#125;</span><br><span class="line">        backLine()</span><br><span class="line">        if isOnGem &#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="检查这个或那个"><a href="#检查这个或那个" class="headerlink" title="检查这个或那个"></a>检查这个或那个</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 12 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isBlocked || isBlockedLeft&#123;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="逻辑迷宫"><a href="#逻辑迷宫" class="headerlink" title="逻辑迷宫"></a>逻辑迷宫</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">for i in 1 ... 8 &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnGem &amp;&amp; isOnClosedSwitch&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">        toggleSwitch()</span><br><span class="line">        turnRight()</span><br><span class="line">        for i in 1 ... 2 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        collectGem()</span><br><span class="line">        func turnAround()&#123;</span><br><span class="line">            for i in 1 ... 2 &#123;</span><br><span class="line">                turnRight()</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        turnAround()</span><br><span class="line">        for i in 1 ... 2 &#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">    else if  isBlocked &amp;&amp; isOnClosedSwitch&#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">    else if isOnGem || isOnClosedSwitch&#123;</span><br><span class="line">        if isOnGem&#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125;</span><br><span class="line">        else if isOnClosedSwitch&#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">            toggleSwitch()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="While-循环"><a href="#While-循环" class="headerlink" title="While 循环"></a>While 循环</h1><h2 id="当…时运行代码"><a href="#当…时运行代码" class="headerlink" title="当…时运行代码"></a>当…时运行代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">while isOnCloseSwitch() &#123;</span><br><span class="line">		toggleSwitch()</span><br><span class="line">    moveForward()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="创建更巧妙的-While-循环"><a href="#创建更巧妙的-While-循环" class="headerlink" title="创建更巧妙的 While 循环"></a>创建更巧妙的 While 循环</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">moveForward()</span><br><span class="line">while !isBlocked &#123;</span><br><span class="line">    if isOnOpenSwitch &#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="正确选取工具"><a href="#正确选取工具" class="headerlink" title="正确选取工具"></a>正确选取工具</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">func turnAndCollectGem() &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    turnLeft()</span><br><span class="line">    moveForward()</span><br><span class="line">    collectGem()</span><br><span class="line">    turnRight()</span><br><span class="line">&#125;</span><br><span class="line">while !isBlocked &#123;</span><br><span class="line">    turnAndCollectGem()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="四乘以四"><a href="#四乘以四" class="headerlink" title="四乘以四"></a>四乘以四</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">while !isBlocked &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnClosedSwitch &#123;</span><br><span class="line">        toggleSwitch()</span><br><span class="line">    &#125;</span><br><span class="line">    if (isBlockedLeft || isBlocked) &amp;&amp; isOnOpenSwitch&#123;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="转身"><a href="#转身" class="headerlink" title="转身"></a>转身</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">while !isBlocked &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnGem &amp;&amp; isBlocked&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">    else if !isOnGem&#123;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="富饶之地"><a href="#富饶之地" class="headerlink" title="富饶之地"></a>富饶之地</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">while !isBlocked &#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnGem || isOnClosedSwitch&#123;</span><br><span class="line">        if isOnGem&#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125;</span><br><span class="line">        else if isOnClosedSwitch&#123;</span><br><span class="line">            toggleSwitch()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if isBlocked&#123;</span><br><span class="line">        if isBlockedLeft &#123;</span><br><span class="line">            turnRight()</span><br><span class="line">            moveForward()</span><br><span class="line">            turnRight()</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        else if isBlockedRight &#123;</span><br><span class="line">            turnRight()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">            moveForward()</span><br><span class="line">            turnLeft()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">while isOnGem || isBlockedLeft &#123;</span><br><span class="line">	while isOnGemm &#123;</span><br><span class="line">		turnLeft()</span><br><span class="line">		collectGem()</span><br><span class="line">	&#125;</span><br><span class="line">	moveForward()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="随机矩形"><a href="#随机矩形" class="headerlink" title="随机矩形"></a>随机矩形</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">while !isBlocked&#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isBlocked &#123;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="始终右转"><a href="#始终右转" class="headerlink" title="始终右转"></a>始终右转</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">while !isBlocked&#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if isOnClosedSwitch || isOnGem&#123;</span><br><span class="line">        if isOnClosedSwitch&#123;</span><br><span class="line">            toggleSwitch()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if isBlocked &amp;&amp; isBlockedLeft&#123;</span><br><span class="line">        turnRight()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><h2 id="右手定则"><a href="#右手定则" class="headerlink" title="右手定则"></a>右手定则</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">func navigateAroundWall() &#123;</span><br><span class="line">    if isBlockedRight&#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;  else &#123;</span><br><span class="line">        turnRight()</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">while !isOnClosedSwitch&#123;</span><br><span class="line">    navigateAroundWall()</span><br><span class="line">    if isOnGem&#123;</span><br><span class="line">        collectGem()</span><br><span class="line">        func turnAround() &#123;</span><br><span class="line">            for i in 1 ... 2 &#123;</span><br><span class="line">                turnLeft()</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        turnAround()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="调整算法"><a href="#调整算法" class="headerlink" title="调整算法"></a>调整算法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">func navigateAroundWall() &#123;</span><br><span class="line">    if !isBlocked&#123;</span><br><span class="line">        if isBlockedRight&#123;</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            turnRight()</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if isBlocked&#123;</span><br><span class="line">        if isBlockedRight &#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            turnRight()</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line">while !isOnClosedSwitch &#123;</span><br><span class="line">    navigateAroundWall()</span><br><span class="line">    if isOnGem &#123;</span><br><span class="line">        collectGem()</span><br><span class="line">        turnLeft()</span><br><span class="line">        turnLeft()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">toggleSwitch()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="征服迷宫"><a href="#征服迷宫" class="headerlink" title="征服迷宫"></a>征服迷宫</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">while !isOnGem&#123;</span><br><span class="line">    if !isBlocked&#123;</span><br><span class="line">        moveForward()</span><br><span class="line">        if isBlockedRight&#123;</span><br><span class="line">            isBlockedLeft</span><br><span class="line">        &#125;</span><br><span class="line">        else if !isBlockedRight&#123;</span><br><span class="line">            turnRight()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if isBlocked&#123;</span><br><span class="line">        if isBlockedRight &#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            turnRight()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="左转还是右转？"><a href="#左转还是右转？" class="headerlink" title="左转还是右转？"></a>左转还是右转？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">while !isOnGem&#123;</span><br><span class="line">    moveForward()</span><br><span class="line">    if !isOnOpenSwitch&#123;</span><br><span class="line">        if isOnClosedSwitch&#123;</span><br><span class="line">            if !isBlocked&#123;</span><br><span class="line">                toggleSwitch()</span><br><span class="line">                turnRight()</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                toggleSwitch()</span><br><span class="line">                turnLeft()</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">collectGem()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="向左走，向右走"><a href="#向左走，向右走" class="headerlink" title="向左走，向右走"></a>向左走，向右走</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">while !isOnOpenSwitch&#123;</span><br><span class="line">    if isOnGem || isOnClosedSwitch&#123;</span><br><span class="line">        if isOnGem&#123;</span><br><span class="line">            collectGem()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            toggleSwitch()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if isBlocked&#123;</span><br><span class="line">        if isBlockedRight&#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        else if isOnOpenSwitch &amp;&amp; isBlocked&#123;</span><br><span class="line">            turnLeft()</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            turnRight()</span><br><span class="line">            moveForward()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        moveForward()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><video controls="controls" src="./3.mp4"></video></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-08-24T08:59:08.866Z" itemprop="dateUpdated">2020-08-24 08:59:08</time>
+</span><br>
+
+
+        
+        鉴于本博主的水平不足，文章难免有出错，还请不吝赐教(真诚脸)!!!
+        
+    </div>
+    
+    <footer>
+        <a href="http://pwp.ink">
+            <img src="/img/avatar.jpg" alt="CoderPwp">
+            CoderPwp
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">☕️</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Playgrounds/" rel="tag">Playgrounds</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Swift%E7%BC%96%E7%A8%8B/" rel="tag">Swift编程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/" rel="tag">macOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%A8%E7%AB%A0%E8%8A%82%E7%AD%94%E6%A1%88/" rel="tag">全章节答案</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%80%9A%E5%85%B3%E4%BB%A3%E7%A0%81/" rel="tag">通关代码</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/08/17/Playgrounds-%E9%80%9A%E5%85%B3%E4%BB%A3%E7%A0%81-%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B-2/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">「Playgrounds - 通关代码」学习编程 2，更新中</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/07/28/%E6%8F%90%E7%A4%BA%EF%BC%9A%E6%9B%B4%E6%96%B0%E8%A2%AB%E6%8B%92%E7%BB%9D%EF%BC%8C%E5%9B%A0%E4%B8%BA%E6%82%A8%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF%E7%9A%84%E6%9C%80%E6%96%B0%E6%8F%90%E4%BA%A4%E8%90%BD%E5%90%8E%E4%BA%8E%E5%85%B6%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">提示：&#39;git push --help&#39; 中的 &#39;Note about fast-forwards&#39; 小节。</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//pwp-ink.oss-cn-shenzhen.aliyuncs.com/JavaScript/Valine.min.js"></script>
+    <style type="text/css">
+        div.vpower.txt-right {
+            display: none;
+        }
+    </style>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "w4BhxOuXt8ADWS5hgPOPsaTy-gzGzoHsz",
+            appKey: "6EceGdAYhExFouov9a0z1066",
+            avatar: "retro",
+            placeholder: "博客已启用邮件通知功能，您的宝贵评论我都会及时收到喔~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        知识无价，请我喝杯咖啡吧~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat-1.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer class="footer">
+    <div class="bottom"><b>
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>CoderPwp &copy; 2018 - 2020</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备19008784号-3</a><br>
+                
+            </span>
+        </p>
+    </b></div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)我藏起来啦!';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(•̀ ω •́)被发现惹~';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
