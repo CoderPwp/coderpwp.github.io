@@ -21,18 +21,18 @@
     
     
     <meta name="keywords" content="黑苹果,logo 突然变大">
-    <meta name="description" content="黑苹果开机时 logo 突然变大，在&#96;&#96;Clover Configurator&#96; 下设置一下就好了">
+    <meta name="description" content="macOS 开机时会跑代码，关了config.plist里参数-v啰嗦模式还是跑代码，可以尝试一下本文的解决方案。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关闭 macOS(适用黑苹果) 开机跑代码、啰嗦模式">
 <meta property="og:url" content="http://pwp.ink/2020/09/05/%E5%85%B3%E9%97%AD-macOS-%E9%80%82%E7%94%A8%E9%BB%91%E8%8B%B9%E6%9E%9C-%E5%BC%80%E6%9C%BA%E8%B7%91%E4%BB%A3%E7%A0%81%E3%80%81%E5%95%B0%E5%97%A6%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="CoderPwp">
-<meta property="og:description" content="黑苹果开机时 logo 突然变大，在&#96;&#96;Clover Configurator&#96; 下设置一下就好了">
+<meta property="og:description" content="macOS 开机时会跑代码，关了config.plist里参数-v啰嗦模式还是跑代码，可以尝试一下本文的解决方案。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://pwp.ink/2020/09/05/%E5%85%B3%E9%97%AD-macOS-%E9%80%82%E7%94%A8%E9%BB%91%E8%8B%B9%E6%9E%9C-%E5%BC%80%E6%9C%BA%E8%B7%91%E4%BB%A3%E7%A0%81%E3%80%81%E5%95%B0%E5%97%A6%E6%A8%A1%E5%BC%8F/image-20200905151225345.png">
 <meta property="og:image" content="http://pwp.ink/2020/09/05/%E5%85%B3%E9%97%AD-macOS-%E9%80%82%E7%94%A8%E9%BB%91%E8%8B%B9%E6%9E%9C-%E5%BC%80%E6%9C%BA%E8%B7%91%E4%BB%A3%E7%A0%81%E3%80%81%E5%95%B0%E5%97%A6%E6%A8%A1%E5%BC%8F/image-20200905151409813.png">
 <meta property="og:image" content="http://pwp.ink/2020/09/05/%E5%85%B3%E9%97%AD-macOS-%E9%80%82%E7%94%A8%E9%BB%91%E8%8B%B9%E6%9E%9C-%E5%BC%80%E6%9C%BA%E8%B7%91%E4%BB%A3%E7%A0%81%E3%80%81%E5%95%B0%E5%97%A6%E6%A8%A1%E5%BC%8F/image-20200905151817390.png">
 <meta property="article:published_time" content="2020-09-05T15:24:36.000Z">
-<meta property="article:modified_time" content="2020-09-05T07:25:30.913Z">
+<meta property="article:modified_time" content="2020-09-05T07:29:16.249Z">
 <meta property="article:author" content="CoderPwp">
 <meta property="article:tag" content="黑苹果">
 <meta property="article:tag" content="logo 突然变大">
@@ -175,7 +175,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>目录</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#解决-1"><span class="post-toc-number">1.</span> <span class="post-toc-text">解决 1</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#解决-2"><span class="post-toc-number">2.</span> <span class="post-toc-text">解决 2</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#解决一"><span class="post-toc-number">1.</span> <span class="post-toc-text">解决一</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#解决二"><span class="post-toc-number">2.</span> <span class="post-toc-text">解决二</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考</span></a></li></ol>
         </nav>
     </aside>
 
@@ -201,8 +201,8 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>黑苹果开机时 logo 突然变大，在``Clover Configurator` 下设置一下就好了<a id="more"></a>，不过也只能让开机第一段 logo 变得和第二段一样大。</p>
-<h1 id="解决-1"><a href="#解决-1" class="headerlink" title="解决 1"></a>解决 1</h1><figure class="image-bubble">
+            <p>macOS 开机时会跑代码，关了<code>config.plist</code>里参数<code>-v</code>啰嗦模式还是跑代码，可以尝试一下本文的解决方案。<a id="more"></a></p>
+<h1 id="解决一"><a href="#解决一" class="headerlink" title="解决一"></a>解决一</h1><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="image-20200905151225345.png" alt="1" title="">
@@ -218,7 +218,7 @@
                 <div class="image-caption">2</div>
             </figure>
 
-<h1 id="解决-2"><a href="#解决-2" class="headerlink" title="解决 2"></a>解决 2</h1><p><strong>如果你明明已经在<code>config.plist</code>里已经关闭了<code>-v</code>参数，开机还是出现跑代码，就请尝试打开终端输入下面的代码尝试。</strong></p>
+<h1 id="解决二"><a href="#解决二" class="headerlink" title="解决二"></a>解决二</h1><p><strong>如果你明明已经在<code>config.plist</code>里已经关闭了<code>-v</code>参数，开机还是出现跑代码，就请尝试打开终端输入下面的代码尝试。</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nvram boot-args&#x3D;&quot;&quot;</span><br></pre></td></tr></table></figure>
 
 <figure class="image-bubble">
@@ -229,6 +229,7 @@
                 <div class="image-caption"></div>
             </figure>
 
+<p>到这里我就已经搞定了，你也可以试试。</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><strong>[1] <a href="https://www.bilibili.com/read/cv7392829" target="_blank" rel="noopener">黑苹果开机如何去掉跑码模式–终极解决方案, 小明和他的女朋友</a></strong></p>
 <p><strong>[2] <a href="https://zhidao.baidu.com/question/1708607034348841300.html" target="_blank" rel="noopener">请教Mac Mini怎么开启和关闭啰嗦模式, 约定20125</a></strong></p>
 
@@ -239,7 +240,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-09-05T07:25:30.913Z" itemprop="dateUpdated">2020-09-05 07:25:30</time>
+    最后更新时间：<time datetime="2020-09-05T07:29:16.249Z" itemprop="dateUpdated">2020-09-05 07:29:16</time>
 </span><br>
 
 
