@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>喷雾瓶</title>
+  <title>Estan Law</title>
   
-  <subtitle>平平无奇的幻想小天才</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pwp.ink/"/>
@@ -10,7 +10,7 @@
   <id>http://pwp.ink/</id>
   
   <author>
-    <name>Pwp</name>
+    <name>Estan Law</name>
     
   </author>
   
